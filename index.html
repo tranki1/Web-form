@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Form Validation</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h1>Keep in touch</h1>
+        <p>Let"s get to know each other</p>
+    </header>
+    <main id="id">
+        <form action="">
+            <div>
+                <h2>Personal information</h2>
+                <label for="firstname">Firstname*</label>
+                <input type="text" id="firstname" name="firstname" required minlength="3" maxlength="25">
+
+                <label for="lastname">Lastname*</label>
+                <input type="text" id="lastname" name="lastname" required minlength="3" maxlength="25">
+
+                <label for="email">Email*</label>
+                <input type="email" id="email" name="email" required minlength="5" maxlength="100">
+                <label for="confirm-email">Confirm email*</label>
+                <input type="confirm-email" id="confirm-email" name="confirm-email" required minlength="5" maxlength="100">
+
+                <label for="phoneNumber">Phone number*</label>
+                <input type="number" id="phoneNumber" name="phoneNumber" required minlength="6" maxlength="10">
+
+                <label for="gender"></label>
+                <input type="radio" name="gender" value "male" checked>Male
+                <input type="radio" name="gender" value="female"> Female
+                <input type="radio" name="gender" value="other"> Other
+
+
+                <label for="address">Street address*</label>
+                <input type="text" id="address" name="address" required minlength="6" maxlength="10">
+
+                <label for="city">City*</label>
+                <input type="text" id="city" name="city" required minlength="6" maxlength="10">
+
+                <label for="zipcode">Zipcode*</label>
+                <input type="number" id="zipcode" name="zipcode" required minlength="6" maxlength="6">
+            </div>
+            <div>
+                <h2>Skills and interestes</h2>
+                <div>
+                    <div>
+                        <h3>What are you working title?</h3>
+                        <select name="workingTitle" id="workingTitle">
+                            <option value="front-end">Front-end developer</option>
+                            <option value="back-end">Back-end developer</option>
+                            <option value="fullstack">Fullstack developer</option>
+                            <option value="designer">Web designer</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+                    <div>
+                        <h3>Which topics are you interesting in?</h3>
+                        <input type="checkbox" name="visual-design" value "visual-design">Visual design
+                        <input type="checkbox" name="ux-design" value "ux-design">UX design
+                        <input type="checkbox" name="front-end-dev" value "front-end-dev">Front-end Development
+                        <input type="checkbox" name="back-end-dev" value "back-end-dev">Back-end Development
+                        <input type="checkbox" name="cms" value "cms">CMS
+                    </div>
+                </div>
+                <div>
+                    <h2>Porfolio</h2>
+                    <p>Add link that lead to your porfolio</p>
+                    <label for="porfolio">Porfolio link*</label>
+                    <input type="url" id="porfolio" name="porfolio" required minlength="5" maxlength="100">
+                    <p>Additional information</p>
+                    <textarea name="extra-info" id="extra-info" rows="5"></textarea>
+                </div>
+            </div>
+            <button type="submit">Submit</button>
+        </form>
+    </main>
+    <footer>
+        <p>Copyright &copy; 2018 by kimhieutran.com </p>
+    </footer>
+</body>
+
+</html>
