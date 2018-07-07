@@ -146,7 +146,7 @@ input[type="radio"]:checked + label span {
     display: none; /*hide original SELECT element:*/
   }
   .select-selected {
-    background-color: DodgerBlue;
+    background-color: var(--shineblue);
   }
   /*style the arrow inside the select element:*/
   .select-selected:after {
@@ -175,7 +175,7 @@ input[type="radio"]:checked + label span {
   /*style items (options):*/
   .select-items {
     position: absolute;
-    background-color: DodgerBlue;
+    background: var(--shineblue);
     top: 100%;
     left: 0;
     right: 0;
